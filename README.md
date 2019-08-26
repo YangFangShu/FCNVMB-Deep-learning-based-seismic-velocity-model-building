@@ -20,12 +20,9 @@ With the goal of estimating velocity models using seismic data as inputs directl
 
 We design the CNN based on the famous [U-Net architecture](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28). We extensively validate the proposed method on similate data and experimental data (i.e. [SEG salt model](https://wiki.seg.org/wiki/Open_data#SEG.2FEAGE_Salt_and_Overthrust_Models)). The following two figures show several visual resultes of our method compared with full waveform inversion (FWI). It denotes that our proposed method is generally available for velocity model building.
 
-![Comparisons of the velocity inversion (simulated models): (a-c) ground
-truth, (d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of
-our method](simulateresult.png)
+![Comparisons of the velocity inversion (simulated models)](simulateresult.png)
 
-![Comparisons of the velocity inversion (SEG salt models): (a-c) ground truth,
-(d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of our method](SEGresult.png)
+![Comparisons of the velocity inversion (SEG salt models)](SEGresult.png)
 
 ## Getting Started
 
