@@ -11,7 +11,9 @@ We investigate a novel method based on the supervised deep fully convolutional n
 generalized network is built. 
 
 ## Experimental Results
+With the goal of estimating velocity models using seismic data as inputs directly, the network needs to project seismic data from the data domain to the model domain. Our method contains two stages: the training process and the prediction process, as shown in the following figure:
 
+!
 
 
 ## Getting Started
