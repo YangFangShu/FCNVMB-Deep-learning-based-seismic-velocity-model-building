@@ -22,10 +22,10 @@ We design the CNN based on the famous [U-Net architecture](https://link.springer
 
 ![Comparisons of the velocity inversion (simulated models): (a-c) ground
 truth, (d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of
-our method](simulateresult)
+our method](simulateresult.png)
 
 ![Comparisons of the velocity inversion (SEG salt models): (a-c) ground truth,
-(d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of our method](SEGresult)
+(d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of our method](SEGresult.png)
 
 ## Getting Started
 
