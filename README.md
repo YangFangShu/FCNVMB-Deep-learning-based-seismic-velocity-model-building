@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Citation
 
 If you find the paper and the code useful in your research, please cite the paper:
-
+```
 @article{yang2019deep,
   title={Deep-learning inversion: a next generation seismic velocity-model building method},
   author={Yang, Fangshu and Ma, Jianwei},
@@ -116,3 +116,4 @@ If you find the paper and the code useful in your research, please cite the pape
   year={2019},
   publisher={Society of Exploration Geophysicists}
 }
+```
