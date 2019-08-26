@@ -1,6 +1,8 @@
-# FCNVMB-Deep-learning-based-seismic-velocity-model-building
-
 # Deep-learning inversion: A next-generation seismic velocity model building method
+
+This is the python implementation (PyTorch) of the deep leraning model for velocity model building in a surpervised approach. The paper (https://library.seg.org/doi/10.1190/geo2018-0249.1) is  published on Geophysics. The arxiv version of the paper is availabel here. (https://arxiv.org/abs/1902.06267)
+
+# Abstract
 
 We investigate a novel method based on the supervised deep fully convolutional neural network (FCN) for velocity-model building (VMB) directly from raw seismograms. Unlike the conventional inversion method based on physical models, the supervised deep-learning methods are based on big-data training rather than prior-knowledge assumptions. One key characteristic of the deep-learning method is that it can automatically extract multi-layer useful features without the need for human-curated activities and initial velocity setup. The data-driven method usually requires more time during the training stage, and actual predictions take less time, with only seconds needed. Therefore, the computational time of geophysical inversions, including real-time inversions, can be dramatically reduced once a good
 generalized network is built. 
