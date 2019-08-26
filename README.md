@@ -13,7 +13,7 @@ generalized network is built.
 ## Experimental Results
 With the goal of estimating velocity models using seismic data as inputs directly, the network needs to project seismic data from the data domain to the model domain. Our method contains two stages: the training process and the prediction process, as shown in the following figure:
 
-!
+![Flowchart of the FCN-based inversion process](schematic.png)
 
 
 ## Getting Started
