@@ -129,3 +129,5 @@ If you find the paper and the code useful in your research, please cite the pape
   publisher={Society of Exploration Geophysicists}
 }
 ```
+If you have any questions about this paper, feel free to contract us: yfs2016@hit.edu.cn
+
