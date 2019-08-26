@@ -1,6 +1,6 @@
 # Deep-learning inversion: A next-generation seismic velocity model building method
 
-This is the python implementation (PyTorch) of the deep leraning model for velocity model building in a surpervised approach. The [paper] (https://library.seg.org/doi/10.1190/geo2018-0249.1) is  published on Geophysics. The arxiv version of the paper is availabel [here] (https://arxiv.org/abs/1902.06267)
+This is the python implementation (PyTorch) of the deep leraning model for velocity model building in a surpervised approach. The paper [Dropwizard](https://library.seg.org/doi/10.1190/geo2018-0249.1) is  published on Geophysics. The arxiv version of the paper is availabel here (https://arxiv.org/abs/1902.06267)
 
 # Abstract
 
