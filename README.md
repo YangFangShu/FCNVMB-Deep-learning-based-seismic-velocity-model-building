@@ -3,7 +3,7 @@
 This is the python implementation (PyTorch) of the deep leraning model for velocity model building in a surpervised approach. The [paper](https://library.seg.org/doi/10.1190/geo2018-0249.1) is  published on Geophysics. The arxiv version of the paper is availabel 
 [here](https://arxiv.org/abs/1902.06267). 
 
-Note: The arxiv version is a litlle different from the publishion, please refer to the official version.
+Note that the arxiv version is a litlle different from the publishion, please refer to the official version.
 
 ## Abstract
 
