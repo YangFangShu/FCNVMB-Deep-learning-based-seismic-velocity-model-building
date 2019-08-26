@@ -24,7 +24,7 @@ We design the CNN based on the famous [U-Net architecture](https://link.springer
 
 ![Comparisons of the velocity inversion (SEG salt models)](/images/SEGresult.png)
 
-## Generating the dataset
+## Dataset
 
 For the training process, we generate the simulated velocity models and their corresponding measurement by solving the acoustic wave equation. Since the storage of the data set is too large to share on website, please don't be hesitate to contact the corresponding author to obtain the shared data associated with this research.
 
