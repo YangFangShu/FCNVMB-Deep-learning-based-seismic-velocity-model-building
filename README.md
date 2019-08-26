@@ -3,7 +3,7 @@
 This is the python implementation (PyTorch) of the deep leraning model for velocity model building in a surpervised approach. The [paper](https://library.seg.org/doi/10.1190/geo2018-0249.1) is  published on Geophysics. The arxiv version of the paper is availabel 
 [here](https://arxiv.org/abs/1902.06267). 
 
-Note: The arxiv version is a litlle different from the publishion. Please refer to the official version.
+Note: The arxiv version is a litlle different from the publishion, please refer to the official version.
 
 ## Abstract
 
@@ -102,8 +102,17 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Citation
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+If you find the paper and the code useful in your research, please cite the paper:
+
+@article{yang2019deep,
+  title={Deep-learning inversion: a next generation seismic velocity-model building method},
+  author={Yang, Fangshu and Ma, Jianwei},
+  journal={Geophysics},
+  volume={84},
+  number={4},
+  pages={1--133},
+  year={2019},
+  publisher={Society of Exploration Geophysicists}
+}
