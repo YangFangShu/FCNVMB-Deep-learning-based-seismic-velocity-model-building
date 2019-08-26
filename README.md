@@ -82,7 +82,7 @@ test_data_dir   = data_dir  + 'test_data/'         # Replace your testing data p
 
 ```
 
-Then checkout these two mian files to train/test the network, simply type
+Then checkout these two main files to train/test the network, simply type
 ```
 python FCNVMB_train.py
 python FCNVMB_test.py
