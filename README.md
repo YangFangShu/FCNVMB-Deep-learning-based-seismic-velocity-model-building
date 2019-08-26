@@ -7,14 +7,25 @@ Note: The arxiv version is a litlle different from the publishion. Please refer 
 
 ## Abstract
 
-We investigate a novel method based on the supervised deep fully convolutional neural network (FCN) for velocity-model building (VMB) directly from raw seismograms. Unlike the conventional inversion method based on physical models, the supervised deep-learning methods are based on big-data training rather than prior-knowledge assumptions. One key characteristic of the deep-learning method is that it can automatically extract multi-layer useful features without the need for human-curated activities and initial velocity setup. The data-driven method usually requires more time during the training stage, and actual predictions take less time, with only seconds needed. Therefore, the computational time of geophysical inversions, including real-time inversions, can be dramatically reduced once a good
-generalized network is built. 
+We investigate a novel method based on the supervised deep fully convolutional neural network (FCN) for velocity-model building (VMB) directly from raw seismograms. Unlike the conventional inversion method based on physical models, the supervised deep-learning methods 
+are based on big-data training rather than prior-knowledge assumptions. One key characteristic of the deep-learning method is that it 
+can automatically extract multi-layer useful features without the need for human-curated activities and initial velocity setup. The 
+data-driven method usually requires more time during the training stage, and actual predictions take less time, with only seconds 
+needed. Therefore, the computational time of geophysical inversions, including real-time inversions, can be dramatically reduced once a good generalized network is built. 
 
 ## Experimental Results
 With the goal of estimating velocity models using seismic data as inputs directly, the network needs to project seismic data from the data domain to the model domain. Our method contains two stages: the training process and the prediction process, as shown in the following figure:
 
 ![Flowchart of the FCN-based inversion process](schematic.png)
 
+We design the CNN based on the famous [U-Net architecture](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28). We extensively validate the proposed method on similate data and experimental data (i.e. [SEG salt model](https://wiki.seg.org/wiki/Open_data#SEG.2FEAGE_Salt_and_Overthrust_Models)). The following two figures show several visual resultes of our method compared with full waveform inversion (FWI). It denotes that our proposed method is generally available for velocity model building.
+
+![Comparisons of the velocity inversion (simulated models): (a-c) ground
+truth, (d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of
+our method](simulateresult)
+
+![Comparisons of the velocity inversion (SEG salt models): (a-c) ground truth,
+(d-f) initial velocity model of FWI, (g-i) results of FWI, and (j-l) prediction of our method](SEGresult)
 
 ## Getting Started
 
