@@ -24,79 +24,70 @@ We design the CNN based on the famous [U-Net architecture](https://link.springer
 
 ![Comparisons of the velocity inversion (SEG salt models)](/images/SEGresult.png)
 
-## Getting Started
+## Generating the dataset
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+For the training process, we generate the simulated velocity models and their corresponding measurement by solving the acoustic wave equation. Since the storage of the data set is too large to share on website, please don't be hesitate to contact the corresponding author to obtain the shared data associated with this research.
 
-### Prerequisites
 
-What things you need to install the software and how to install them
+## Training & Testing
+
+The scripts FCNVMB_train.py and FCNVMB_test.py are implemented for training and testing. If you want to train your own network, please firstly checkout the files named ParamConfig.py and PathConfig.py, to be sure that all the parameters and the paths are consistent, e.g.
+```
+####################################################
+####             MAIN PARAMETERS                ####
+####################################################
+SimulateData  = True          # If False denotes training the CNN with SEGSaltData
+ReUse         = False         # If False always re-train a network 
+DataDim       = [2000,301]    # Dimension of original one-shot seismic data
+data_dsp_blk  = (5,1)         # Downsampling ratio of input
+ModelDim      = [201,301]     # Dimension of one velocity model
+label_dsp_blk = (1,1)         # Downsampling ratio of output
+dh            = 10            # Space interval 
+
+
+####################################################
+####             NETWORK PARAMETERS             ####
+####################################################   
+BatchSize         = 10        # Number of batch size
+LearnRate         = 1e-3      # Learning rate
+Nclasses          = 1         # Number of output channels
+Inchannels        = 29        # Number of input channels, i.e. the number of shots
+SaveEpoch         = 20        
+DisplayStep       = 2         # Number of steps till outputting stats
+```
+and
+```
+###################################################
+####                   PATHS                  #####
+###################################################
+ 
+main_dir   = '/home/yfs1/Code/pytorch/FCNVMB/'     # Replace your main path here
+
+## Check the main directory
+if len(main_dir) == 0:
+    raise Exception('Please specify path to correct directory!')
+    
+    
+## Data path
+if os.path.exists('./data/'):
+    data_dir    = main_dir + 'data/'               # Replace your data path here
+else:
+    os.makedirs('./data/')
+    data_dir    = main_dir + 'data/'
+    
+# Define training/testing data directory
+
+train_data_dir  = data_dir  + 'train_data/'        # Replace your training data path here
+test_data_dir   = data_dir  + 'test_data/'         # Replace your testing data path here
 
 ```
-Give examples
+
+Then checkout these two mian files to train/test the network, simply type
+```
+python FCNVMB_train.py
+python FCNVMB_test.py
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## Enviroment Requirement
 
