@@ -115,7 +115,7 @@ If you find the paper and the code useful in your research, please cite the pape
   journal={Geophysics},
   volume={84},
   number={4},
-  pages={1--133},
+  pages={R583–R599},
   year={2019},
   publisher={Society of Exploration Geophysicists}
 }
