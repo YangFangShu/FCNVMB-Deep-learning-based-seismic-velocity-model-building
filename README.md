@@ -110,12 +110,12 @@ conda install pytorch torchvision cudatoolkit=9.2 -c pytorch
 If you find the paper and the code useful in your research, please cite the paper:
 ```
 @article{yang2019deep,
-  title={Deep-learning inversion: a next generation seismic velocity-model building method},
+  title={Deep-learning inversion: A next-generation seismic velocity model building method},
   author={Yang, Fangshu and Ma, Jianwei},
   journal={Geophysics},
   volume={84},
   number={4},
-  pages={R583–R599},
+  pages={R583--R599},
   year={2019},
   publisher={Society of Exploration Geophysicists}
 }
