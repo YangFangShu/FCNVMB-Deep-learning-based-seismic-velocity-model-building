@@ -61,7 +61,7 @@ and
 ####                   PATHS                  #####
 ###################################################
  
-main_dir   = '/home/yfs1/Code/pytorch/FCNVMB/'     # Replace your main path here
+main_dir   = '/home/yfs/Code/pytorch/FCNVMB/'     # Replace your main path here
 
 ## Check the main directory
 if len(main_dir) == 0:
@@ -92,8 +92,8 @@ python FCNVMB_test.py
 ## Enviroment Requirement
 
 ```
-python = 3.7
-pytorch = 1.0
+python = 3.8.5
+pytorch = 1.4.0
 numpy
 scipy
 matplotlib
