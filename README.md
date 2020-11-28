@@ -102,7 +102,7 @@ math
 ```
 All of them can be installed via ```conda (anaconda)```, e.g.
 ```
-conda install pytorch torchvision cudatoolkit=9.2 -c pytorch
+conda install pytorch torchvision torchaudio cudatoolkit=10.0 -c pytorch
 ```
 
 ## Citation
