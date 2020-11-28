@@ -26,7 +26,7 @@ We design the CNN based on the famous [U-Net architecture](https://link.springer
 
 ## Dataset
 
-For the training process, we generate the simulated velocity models and their corresponding measurement by solving the acoustic wave equation. Since the storage of the data set is too large to share on GitHub, so you have the access to download the synthetic and SEG salt velocity models for training and testing process on Google Drive (). Note that you should generate the corresponding seismic measurement by yourself. Once you have the data pairs, you can train the network as following. 
+For the training process, we generate the simulated velocity models and their corresponding measurement by solving the acoustic wave equation. We provide the synthetic and SEG salt velocity models for training and testing process which are included in FCNVMB-data.zip. Note that you should generate the corresponding seismic measurement by yourself. Once you have the data pairs, you can train the network as following. 
 
 
 ## Training & Testing
