@@ -50,6 +50,8 @@ def DataLoad_Test(test_size,test_data_dir,data_dim,in_channels,model_dim,data_ds
     
     return test_set, label_set, data_dsp_dim, label_dsp_dim
 
+# downsampling function by taking the middle value
 def decimate(a,axis):
-    idx=np.round((a.shape[axis]+1.0)/2.0-1)
-    return a[...,idx.astype(int)]
+    idx = np.round((np.array(a.shape)[np.array(axis).reshape(1,-1)]+1.0)/2.0-1).reshape(-1)
+    downa = np.array(a)[:,:,idx[0].astype(int),idx[1].astype(int)]
+    return downa
